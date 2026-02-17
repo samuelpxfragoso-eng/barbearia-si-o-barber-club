@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { ShoppingBag, MessageCircle, ChevronDown, ChevronUp, Sparkles, Smartphone, Package } from 'lucide-react';
+import { ShoppingBag, MessageCircle, ChevronDown, ChevronUp, Package } from 'lucide-react';
 
 const ProductShop: React.FC = () => {
   const [showList, setShowList] = useState(false);
@@ -72,7 +72,7 @@ const ProductShop: React.FC = () => {
   return (
     <section id="produtos" className="py-24 bg-black relative">
       <div className="container mx-auto px-4">
-        {/* Header */}
+        {/* Cabeçalho */}
         <div className="text-center mb-16">
           <h2 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">MANTENHA O PADRÃO EM CASA</h2>
           <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8">
@@ -83,7 +83,7 @@ const ProductShop: React.FC = () => {
           </p>
         </div>
 
-        {/* Auto-scrolling Images */}
+        {/* Imagens com Rolagem Automática */}
         <div className="max-w-6xl mx-auto mb-16 relative group">
           <div 
             ref={scrollRef}
@@ -100,7 +100,7 @@ const ProductShop: React.FC = () => {
             ))}
           </div>
           
-          {/* Indicators */}
+          {/* Indicadores */}
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
             {images.map((_, idx) => (
               <button 
@@ -112,7 +112,7 @@ const ProductShop: React.FC = () => {
           </div>
         </div>
 
-        {/* Toggle Button */}
+        {/* Botão de Alternância */}
         <div className="flex flex-col items-center gap-8">
           <button 
             onClick={() => setShowList(!showList)}
@@ -123,7 +123,7 @@ const ProductShop: React.FC = () => {
             {showList ? <ChevronUp size={22} /> : <ChevronDown size={22} />}
           </button>
 
-          {/* Collapsible Product List */}
+          {/* Lista de Produtos Retrátil */}
           {showList && (
             <div className="w-full max-w-4xl animate-in fade-in slide-in-from-top-10 duration-700">
               <div className="bg-white/[0.02] border border-white/5 backdrop-blur-xl rounded-[40px] p-8 md:p-12">
@@ -145,10 +145,10 @@ const ProductShop: React.FC = () => {
 
                 <div className="mt-16 pt-10 border-t border-white/5 text-center">
                   <p className="text-white/40 text-xs font-medium uppercase tracking-widest mb-8">
-                    * Preços sujeitos a alteração sem aviso prévio. Consulte estoque.
+                    * Preços sujeitos a alteração sem aviso prévio. Consulte o estoque.
                   </p>
                   <a 
-                    href="https://wa.me/5582993881114"
+                    href="https://wa.link/q20rlq"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-4 bg-[#25D366] text-white px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-xs transition-all hover:scale-105 shadow-xl"
@@ -162,7 +162,7 @@ const ProductShop: React.FC = () => {
           )}
         </div>
 
-        {/* Footer info */}
+        {/* Informação do Rodapé */}
         <div className="mt-20 text-center opacity-40">
            <p className="text-[10px] text-white font-black uppercase tracking-[0.4em]">
             VISITE UMA DE NOSSAS UNIDADES PARA CONHECER A LINHA COMPLETA

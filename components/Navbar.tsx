@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           ))}
           <div className="flex items-center gap-4">
             <a
-              href="https://instagram.com/siaobarberclub"
+              href="https://www.instagram.com/siao_barber_club?igsh=MWgwOHkwZ2xtbWRjaQ=="
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full border border-white/20 hover:border-gold hover:text-gold transition-all"
@@ -54,7 +54,9 @@ const Navbar: React.FC = () => {
               <Instagram size={20} />
             </a>
             <a
-              href="#servicos"
+              href="https://wa.link/q20rlq"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gold hover:bg-gold-light text-black px-6 py-2.5 rounded-full font-bold text-sm tracking-wide transition-all gold-glow"
             >
               Agendar Agora
@@ -85,7 +87,9 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <a
-            href="#servicos"
+            href="https://wa.link/q20rlq"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}
             className="w-full text-center bg-gold text-black py-4 rounded-full font-bold text-lg"
           >

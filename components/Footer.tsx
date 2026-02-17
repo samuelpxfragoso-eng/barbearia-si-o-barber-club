@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               Elevando o conceito de cuidado masculino em Alagoas através de técnica, tradição e luxo.
             </p>
             <div className="flex gap-4">
-              <a href="https://instagram.com/siaobarberclub" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
+              <a href="https://www.instagram.com/siao_barber_club?igsh=MWgwOHkwZ2xtbWRjaQ==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
                 <Instagram size={18} />
               </a>
               {[Facebook, Youtube].map((Icon, idx) => (
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
               <li><a href="#" className="hover:text-gold transition-colors">Termos de Uso</a></li>
               <li><a href="#" className="hover:text-gold transition-colors">Políticas de Privacidade</a></li>
               <li><a href="#" className="hover:text-gold transition-colors">Seja um Franqueado</a></li>
-              <li><a href="#sobre" className="hover:text-gold transition-colors">Trabalhe Conosco</a></li>
+              <li><a href="https://wa.link/g6ngx7" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Trabalhe Conosco</a></li>
             </ul>
           </div>
         </div>

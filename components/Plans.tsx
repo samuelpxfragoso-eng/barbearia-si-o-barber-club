@@ -12,7 +12,7 @@ const Plans: React.FC = () => {
       badge: null,
     },
     {
-      name: 'PLANO DE CORTE E BARBA TERAPIA',
+      name: 'PLANO DE CORTE E BARBAROTERAPIA',
       price: '129,99',
       icon: <Crown className="text-gold" size={24} />,
       features: ['Cortes e barbas ilimitados', '10% de desconto em produtos e serviços', 'Massagem facial inclusa'],
@@ -29,7 +29,7 @@ const Plans: React.FC = () => {
       name: 'PLANO DE BARBA ILIMITADO',
       price: '63,00',
       icon: <Star className="text-gold" size={24} />,
-      features: ['Barba simples', '10% de desconto em produtos e serviços', 'Hidratação de barba'],
+      features: ['Barba simples ilimitada', '10% de desconto em produtos e serviços', 'Hidratação de barba'],
       badge: null,
     },
   ];
@@ -103,14 +103,19 @@ const Plans: React.FC = () => {
               </ul>
 
               {/* Button */}
-              <button className="w-full py-5 rounded-full bg-gold text-black font-black uppercase tracking-widest text-xs transition-all hover:bg-gold-light gold-glow mb-8">
+              <a 
+                href="https://cashbarber.com.br/siaobarberclub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-5 rounded-full bg-gold text-black font-black uppercase tracking-widest text-center text-xs transition-all hover:bg-gold-light gold-glow mb-8"
+              >
                 Assinar Agora
-              </button>
+              </a>
 
               {/* Bottom Links */}
               <div className="flex justify-between items-center px-2">
-                <a href="#" className="text-[8px] font-black text-white/30 uppercase tracking-[0.2em] hover:text-white transition-colors">CONFIRA AS VANTAGENS</a>
-                <a href="#" className="text-[8px] font-black text-white/30 uppercase tracking-[0.2em] hover:text-white transition-colors">TERMOS DE USO</a>
+                <a href="https://cashbarber.com.br/siaobarberclub" className="text-[8px] font-black text-white/30 uppercase tracking-[0.2em] hover:text-white transition-colors">CONFIRA AS VANTAGENS</a>
+                <a href="https://cashbarber.com.br/siaobarberclub" className="text-[8px] font-black text-white/30 uppercase tracking-[0.2em] hover:text-white transition-colors">TERMOS DE USO</a>
               </div>
             </div>
           ))}

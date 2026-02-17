@@ -56,11 +56,11 @@ const ReviewsFAQ: React.FC = () => {
 
   return (
     <section id="reviews" className="py-24 bg-[#0b0d11] relative overflow-hidden">
-      {/* Background Aurora Effect */}
+      {/* Efeito Aurora de Fundo */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Reviews Header */}
+        {/* Cabeçalho de Avaliações */}
         <div className="text-center mb-16">
           <h2 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">
             VOZES DA EXPERIÊNCIA
@@ -73,7 +73,7 @@ const ReviewsFAQ: React.FC = () => {
           </p>
           
           <a 
-            href="https://google.com/search?q=siao+barber+club+reviews" 
+            href="https://g.page/r/CWufi9YZUFOEEAE/review" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-black px-8 py-4 rounded-full font-black uppercase tracking-widest text-[10px] transition-all gold-glow"
@@ -83,9 +83,9 @@ const ReviewsFAQ: React.FC = () => {
           </a>
         </div>
 
-        {/* Reviews Carousel */}
+        {/* Carrossel de Avaliações */}
         <div className="relative mb-24 group">
-          {/* Navigation Arrows */}
+          {/* Setas de Navegação */}
           <button 
             onClick={() => scroll('left')}
             className="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/10 bg-black/60 backdrop-blur-md flex items-center justify-center text-white/50 hover:border-gold/50 hover:text-gold transition-all"
@@ -132,7 +132,7 @@ const ReviewsFAQ: React.FC = () => {
           </div>
         </div>
 
-        {/* FAQ Section */}
+        {/* Seção de FAQ */}
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">FAQ</h2>

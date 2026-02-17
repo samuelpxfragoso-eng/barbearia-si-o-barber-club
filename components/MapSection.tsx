@@ -13,7 +13,7 @@ const MapSection: React.FC = () => {
       address: 'Galeria Caravelas, Praia do Francês, Marechal Deodoro - AL',
       phone: '(82) 99388-1114',
       mapEmbedUrl: 'https://www.google.com/maps?q=Si%C3%A3o+Barber+Club+Praia+do+Franc%C3%AAs&output=embed',
-      link: 'https://www.google.com/search?q=Siao+Barber+Club+Praia+do+Frances+Avaliar'
+      link: 'https://g.page/r/CWufi9YZUFOEEAE/review'
     },
     {
       name: 'Unidade Pedras',
@@ -22,7 +22,7 @@ const MapSection: React.FC = () => {
       address: 'Região das Pedras, Marechal Deodoro - AL',
       phone: '(82) 99146-8648',
       mapEmbedUrl: 'https://www.google.com/maps?q=Si%C3%A3o+Barber+Club+Pedras+Marechal+Deodoro&output=embed',
-      link: 'https://www.google.com/search?q=Siao+Barber+Club+Pedras+Avaliar'
+      link: 'https://g.page/r/CWufi9YZUFOEEAE/review'
     },
     {
       name: 'Unidade Trevo',
@@ -31,17 +31,17 @@ const MapSection: React.FC = () => {
       address: 'Trevo de acesso a Marechal Deodoro - AL',
       phone: '(82) 99106-6112',
       mapEmbedUrl: 'https://www.google.com/maps?q=Si%C3%A3o+Barber+Club+Trevo+Marechal+Deodoro&output=embed',
-      link: 'https://www.google.com/search?q=Siao+Barber+Club+Trevo+Avaliar'
+      link: 'https://g.page/r/CWufi9YZUFOEEAE/review'
     }
   ];
 
   return (
     <section id="onde-estamos" className="py-24 bg-[#0b0d11] relative overflow-hidden">
-      {/* Background Glow */}
+      {/* Brilho de Fundo */}
       <div className="absolute bottom-0 left-0 w-full h-[500px] bg-gradient-to-t from-gold/5 to-transparent pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">
-        {/* Header Section */}
+        {/* Seção de Cabeçalho */}
         <div className="text-center mb-16">
           <h2 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">LOGÍSTICA SIÃO</h2>
           <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-tight">
@@ -52,9 +52,9 @@ const MapSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Layout Grid */}
+        {/* Grid de Layout */}
         <div className="flex flex-col lg:flex-row gap-8 items-stretch max-w-[1400px] mx-auto">
-          {/* Units List */}
+          {/* Lista de Unidades */}
           <div className="lg:w-[40%] space-y-4 flex flex-col">
             {locations.map((loc, idx) => (
               <button 
@@ -114,7 +114,7 @@ const MapSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Map Display */}
+          {/* Exibição do Mapa */}
           <div className="lg:w-[60%] h-[500px] lg:h-auto min-h-[550px] rounded-[40px] overflow-hidden border border-white/10 shadow-2xl relative grayscale-[60%] contrast-[1.1] invert-[0.9] hue-rotate-[180deg] transition-all">
             <iframe
               key={activeUnit} 

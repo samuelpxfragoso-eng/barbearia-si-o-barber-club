@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Briefcase, GraduationCap, ChevronDown } from 'lucide-react';
+import { Calendar, GraduationCap, ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -39,17 +39,19 @@ const Hero: React.FC = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           <a
-            href="https://wa.me/5582993881114"
+            href="https://wa.link/q20rlq"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full border border-white/20 hover:bg-white/5 text-white font-bold text-lg transition-all backdrop-blur-md group"
+            className="w-full md:w-auto flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-gold text-black hover:bg-gold-light font-black text-lg transition-all gold-glow group"
           >
-            Trabalhe Conosco
-            <Briefcase size={20} className="group-hover:-translate-y-1 transition-transform" />
+            Agendar Horário
+            <Calendar size={20} className="group-hover:-translate-y-1 transition-transform" />
           </a>
           <a
-            href="#academy"
-            className="w-full md:w-auto flex items-center justify-center gap-3 bg-gold hover:bg-gold-light text-black px-10 py-5 rounded-full font-bold text-lg transition-all gold-glow group"
+            href="https://wa.link/6a32w7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full md:w-auto flex items-center justify-center gap-3 bg-gold text-black hover:bg-gold-light px-10 py-5 rounded-full font-black text-lg transition-all gold-glow group"
           >
             Academy
             <GraduationCap size={22} className="group-hover:rotate-12 transition-transform" />

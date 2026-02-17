@@ -28,7 +28,7 @@ const Academy: React.FC = () => {
   return (
     <section id="academy" className="py-24 bg-[#0b0d11] relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-4xl text-center">
-        {/* Header Section */}
+        {/* Seção de Cabeçalho */}
         <div className="mb-12">
           <h2 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">
             ACADEMY
@@ -42,7 +42,7 @@ const Academy: React.FC = () => {
           </p>
         </div>
 
-        {/* Video Player Section */}
+        {/* Seção do Player de Vídeo */}
         <div className="relative max-w-[340px] mx-auto mb-16 group">
           <div className="relative rounded-[40px] overflow-hidden border border-white/10 shadow-2xl aspect-[9/16] bg-black">
             <video
@@ -70,7 +70,7 @@ const Academy: React.FC = () => {
               {isMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
             </button>
 
-            {/* "Com Áudio" Label */}
+            {/* Etiqueta "Com Áudio" */}
             <div className="absolute top-6 left-6 px-3 py-1.5 rounded-md bg-gold/20 border border-gold/30 backdrop-blur-md flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
               <span className="text-[8px] font-black text-gold uppercase tracking-widest">COM ÁUDIO</span>
@@ -78,7 +78,7 @@ const Academy: React.FC = () => {
           </div>
         </div>
 
-        {/* Features Cards */}
+        {/* Cards de Destaque */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           <div className="p-8 rounded-[32px] bg-white/[0.03] border border-white/5 backdrop-blur-sm text-left flex gap-6">
             <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center shrink-0 border border-gold/20">
@@ -105,7 +105,7 @@ const Academy: React.FC = () => {
           </div>
         </div>
 
-        {/* Interest Section (WhatsApp) */}
+        {/* Seção de Interesse (WhatsApp) */}
         <div className="bg-white/[0.02] border border-white/5 rounded-[40px] p-10 md:p-16 relative overflow-hidden">
           <div className="mb-10">
             <div className="inline-flex items-center gap-3 bg-gold/10 border border-gold/20 px-5 py-2 rounded-full mb-8">
@@ -124,7 +124,7 @@ const Academy: React.FC = () => {
           </div>
 
           <a 
-            href="https://wa.me/5582993881114"
+            href="https://wa.link/6a32w7"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full md:w-auto inline-flex items-center justify-center gap-4 bg-gold hover:bg-gold-light text-black px-12 py-6 rounded-2xl font-black uppercase tracking-widest text-sm transition-all gold-glow"

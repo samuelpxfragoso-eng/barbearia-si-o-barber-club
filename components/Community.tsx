@@ -16,7 +16,7 @@ const Community: React.FC = () => {
   return (
     <section className="py-24 bg-[#0b0d11]">
       <div className="container mx-auto px-4 text-center">
-        {/* Header Section */}
+        {/* Seção de Cabeçalho */}
         <div className="mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-6">
             <Instagram size={14} className="text-gold" />
@@ -32,7 +32,7 @@ const Community: React.FC = () => {
           </p>
 
           <a 
-            href="https://instagram.com/siaobarberclub" 
+            href="https://www.instagram.com/siao_barber_club?igsh=MWgwOHkwZ2xtbWRjaQ==" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-black px-10 py-4 rounded-full font-black uppercase tracking-widest text-[10px] md:text-xs transition-all hover:bg-gold mb-16 shadow-xl"
@@ -42,18 +42,18 @@ const Community: React.FC = () => {
           </a>
         </div>
 
-        {/* Custom Grid Layout */}
+        {/* Layout de Grid Customizado */}
         <div className="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-6 gap-4 mb-12">
-          {/* Main Large Image */}
+          {/* Imagem Principal */}
           <div className="col-span-2 md:col-span-2 row-span-2 rounded-2xl overflow-hidden border border-white/5 group">
             <img 
               src={images[0]} 
-              alt="Community 1" 
+              alt="Comunidade 1" 
               className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
             />
           </div>
           
-          {/* Small Images Grid */}
+          {/* Grid de Imagens Pequenas */}
           {images.slice(1).map((src, idx) => (
             <div 
               key={idx} 
@@ -61,7 +61,7 @@ const Community: React.FC = () => {
             >
               <img 
                 src={src} 
-                alt={`Community ${idx + 2}`} 
+                alt={`Comunidade ${idx + 2}`} 
                 className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
               />
             </div>
@@ -69,12 +69,12 @@ const Community: React.FC = () => {
         </div>
 
         <a 
-          href="https://instagram.com/siaobarberclub" 
+          href="https://www.instagram.com/siao_barber_club?igsh=MWgwOHkwZ2xtbWRjaQ==" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-block text-white/30 font-black uppercase tracking-[0.3em] text-[10px] hover:text-gold transition-colors"
         >
-          VER MAIS NO @SIAOBARBERCLUB
+          VER MAIS NO @SIAO_BARBER_CLUB
         </a>
       </div>
     </section>

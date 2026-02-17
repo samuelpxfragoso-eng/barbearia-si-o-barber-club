@@ -37,7 +37,7 @@ const CinematicVideo: React.FC = () => {
               Seja como barbeiro ou colaborador, nosso time aguarda por você. Mande uma mensagem caso tenha interesse em fazer parte da equipe Sião Barber Club.
             </p>
             <a 
-              href="https://wa.me/5582993881114"
+              href="https://wa.link/g6ngx7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-5 rounded-full border border-gold hover:bg-gold hover:text-black text-gold font-black uppercase tracking-widest text-xs transition-all backdrop-blur-md"
