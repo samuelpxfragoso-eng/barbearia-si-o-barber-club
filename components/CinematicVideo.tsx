@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { MessageCircle } from 'lucide-react';
 
 const CinematicVideo: React.FC = () => {
   return (
@@ -26,20 +27,23 @@ const CinematicVideo: React.FC = () => {
 
           {/* Coluna do Texto */}
           <div className="w-full lg:w-[45%]">
-            <h2 className="text-[#c2a440] font-black uppercase tracking-[0.4em] text-xs mb-6">
-              A ARTE EM MOVIMENTO
+            <h2 className="text-gold font-black uppercase tracking-[0.4em] text-xs mb-6">
+              MODERNIDADE E TRADIÇÃO EM CADA DETALHE
             </h2>
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-tight mb-8">
-              A ESSÊNCIA DA <span className="text-[#c2a440] italic">SIÃO</span> EM ALTA DEFINIÇÃO.
+              SAIBA COMO <span className="text-gold italic">TRABALHAR</span> CONOSCO.
             </h3>
             <p className="text-white/60 text-lg font-light leading-relaxed mb-10">
-              Assista ao ritual de excelência que define nossa barbearia. Cada movimento é planejado para proporcionar não apenas um corte, mas uma transformação completa e revigorante.
+              Seja como barbeiro ou colaborador, nosso time aguarda por você. Mande uma mensagem caso tenha interesse em fazer parte da equipe Sião Barber Club.
             </p>
             <a 
-              href="#academy"
-              className="inline-block px-10 py-4 rounded-full border border-white/20 hover:border-[#c2a440] hover:text-[#c2a440] text-white font-bold text-sm transition-all backdrop-blur-md"
+              href="https://wa.me/5582993881114"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-10 py-5 rounded-full border border-gold hover:bg-gold hover:text-black text-gold font-black uppercase tracking-widest text-xs transition-all backdrop-blur-md"
             >
-              Conhecer a Academy
+              <MessageCircle size={18} fill="currentColor" />
+              Trabalhe Conosco
             </a>
           </div>
         </div>

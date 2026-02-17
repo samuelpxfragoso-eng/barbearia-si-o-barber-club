@@ -12,11 +12,11 @@ const ShortVideos: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         {/* Header Section */}
         <div className="mb-16">
-          <h2 className="text-[#c2a440] font-black uppercase tracking-[0.3em] text-[10px] mb-4">
+          <h2 className="text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-4">
             A ARTE EM FOCO
           </h2>
           <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight mb-8">
-            ESTILO EM <span className="text-[#c2a440] italic">MOVIMENTO</span>.
+            MODERNIDADE E <span className="text-gold italic">TRADIÇÃO</span> EM CADA DETALHE.
           </h3>
           <p className="text-white/40 max-w-2xl mx-auto text-sm md:text-base font-medium leading-relaxed">
             Confira os detalhes de precisão e a transformação completa que entregamos em cada atendimento.
@@ -28,7 +28,7 @@ const ShortVideos: React.FC = () => {
           {videos.map((vid, idx) => (
             <div 
               key={idx} 
-              className="relative w-full md:w-1/2 aspect-[9/16] rounded-[32px] overflow-hidden border border-white/10 group shadow-2xl transition-all hover:border-[#c2a440]/30"
+              className="relative w-full md:w-1/2 aspect-[9/16] rounded-[32px] overflow-hidden border border-white/10 group shadow-2xl transition-all hover:border-gold/30"
             >
               <video
                 autoPlay

@@ -7,6 +7,7 @@ import CinematicVideo from './components/CinematicVideo';
 import About from './components/About';
 import Locations from './components/Locations';
 import Services from './components/Services';
+import ProductShop from './components/ProductShop';
 import ShortVideos from './components/ShortVideos';
 import Academy from './components/Academy';
 import Gallery from './components/Gallery';
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         <About />
         <Locations />
         <Services />
+        <ProductShop />
         <ShortVideos />
         <Academy />
         <Gallery />

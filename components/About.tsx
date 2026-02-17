@@ -15,21 +15,21 @@ const About: React.FC = () => {
           
           {/* Coluna do Texto (Esquerda) */}
           <div className="lg:w-1/2">
-            <h2 className="text-[#c2a440] font-black uppercase tracking-[0.3em] text-xs mb-6">
+            <h2 className="text-gold font-black uppercase tracking-[0.3em] text-xs mb-6">
               LEGADO DE EXCELÊNCIA
             </h2>
             <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight mb-8">
-              A HISTÓRIA POR TRÁS DA <span className="text-[#c2a440] italic">LÂMINA</span>.
+              A HISTÓRIA POR TRÁS DA <span className="text-gold italic">LÂMINA</span>.
             </h3>
             <p className="text-lg text-white/40 font-medium leading-relaxed mb-16 max-w-xl">
-              Nascida sob a brisa da Praia do Francês, a Sião Barber Club transcende o conceito de barbearia. É um refúgio para o homem que valoriza o tempo, a tradição e a autoexpressão por meio de uma estética impecável, consolidada por mais de uma década de maestria.
+              Nascida em Marechal Deodoro, Alagoas, a Sião Barber Club transcende o conceito de barbearia. É um refúgio para o homem que valoriza o tempo, a tradição e a autoexpressão por meio de uma estética impecável, consolidada por mais de uma década de maestria.
             </p>
 
             {/* Stats Horizontais */}
             <div className="flex flex-wrap gap-12 lg:gap-20">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <div className="text-3xl font-black text-[#c2a440] mb-1">{stat.value}</div>
+                  <div className="text-3xl font-black text-gold mb-1">{stat.value}</div>
                   <div className="text-[10px] text-white/40 font-black uppercase tracking-widest">{stat.label}</div>
                 </div>
               ))}

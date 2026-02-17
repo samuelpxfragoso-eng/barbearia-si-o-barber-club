@@ -9,14 +9,17 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div>
              <span className="text-3xl font-black tracking-tighter text-white uppercase italic mb-8 block">
-              SIÃO <span className="text-[#c2a440]">BARBER CLUB</span>
+              SIÃO <span className="text-gold">BARBER CLUB</span>
             </span>
             <p className="text-white/40 font-light mb-8 leading-relaxed">
               Elevando o conceito de cuidado masculino em Alagoas através de técnica, tradição e luxo.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Facebook, Youtube].map((Icon, idx) => (
-                <a key={idx} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#c2a440] hover:text-black transition-all">
+              <a href="https://instagram.com/siaobarberclub" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
+                <Instagram size={18} />
+              </a>
+              {[Facebook, Youtube].map((Icon, idx) => (
+                <a key={idx} href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
                   <Icon size={18} />
                 </a>
               ))}
@@ -26,30 +29,30 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-8">Navegação</h4>
             <ul className="space-y-4 text-white/40 text-sm">
-              <li><a href="#" className="hover:text-[#c2a440] transition-colors">Início</a></li>
-              <li><a href="#sobre" className="hover:text-[#c2a440] transition-colors">Sobre o Legado</a></li>
-              <li><a href="#unidades" className="hover:text-[#c2a440] transition-colors">Unidades</a></li>
-              <li><a href="#servicos" className="hover:text-[#c2a440] transition-colors">Menu de Serviços</a></li>
-              <li><a href="#academy" className="hover:text-[#c2a440] transition-colors">Sião Academy</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Início</a></li>
+              <li><a href="#sobre" className="hover:text-gold transition-colors">Sobre o Legado</a></li>
+              <li><a href="#unidades" className="hover:text-gold transition-colors">Unidades</a></li>
+              <li><a href="#servicos" className="hover:text-gold transition-colors">Menu de Serviços</a></li>
+              <li><a href="#academy" className="hover:text-gold transition-colors">Academy</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-8">Contatos</h4>
             <ul className="space-y-4 text-white/40 text-sm">
-              <li className="flex items-center gap-3"><Phone size={16} className="text-[#c2a440]" /> (82) 99999-0000</li>
-              <li className="flex items-center gap-3"><Mail size={16} className="text-[#c2a440]" /> contato@siaobarber.com.br</li>
-              <li className="flex items-center gap-3"><MapPin size={16} className="text-[#c2a440]" /> Marechal Deodoro, Alagoas</li>
+              <li className="flex items-center gap-3"><Phone size={16} className="text-gold" /> (82) 99388-1114</li>
+              <li className="flex items-center gap-3"><Mail size={16} className="text-gold" /> contato@siaobarberclub.com.br</li>
+              <li className="flex items-center gap-3"><MapPin size={16} className="text-gold" /> Marechal Deodoro, Alagoas</li>
             </ul>
           </div>
 
           <div>
              <h4 className="text-white font-bold uppercase tracking-widest text-sm mb-8">Institucional</h4>
              <ul className="space-y-4 text-white/40 text-sm">
-              <li><a href="#" className="hover:text-[#c2a440] transition-colors">Termos de Uso</a></li>
-              <li><a href="#" className="hover:text-[#c2a440] transition-colors">Políticas de Privacidade</a></li>
-              <li><a href="#" className="hover:text-[#c2a440] transition-colors">Seja um Franqueado</a></li>
-              <li><a href="#" className="hover:text-[#c2a440] transition-colors">Trabalhe Conosco</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Termos de Uso</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Políticas de Privacidade</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors">Seja um Franqueado</a></li>
+              <li><a href="#sobre" className="hover:text-gold transition-colors">Trabalhe Conosco</a></li>
             </ul>
           </div>
         </div>

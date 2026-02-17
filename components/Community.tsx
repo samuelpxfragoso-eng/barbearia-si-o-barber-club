@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, Plus } from 'lucide-react';
 
 const Community: React.FC = () => {
   const images = [
@@ -18,18 +18,28 @@ const Community: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         {/* Header Section */}
         <div className="mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#c2a440]/30 bg-[#c2a440]/5 mb-6">
-            <Instagram size={14} className="text-[#c2a440]" />
-            <span className="text-[10px] font-black text-[#c2a440] uppercase tracking-widest">CONECTE-SE CONOSCO</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-6">
+            <Instagram size={14} className="text-gold" />
+            <span className="text-[10px] font-black text-gold uppercase tracking-widest">CONECTE-SE CONOSCO</span>
           </div>
           
           <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight mb-8">
-            NOSSA <span className="text-[#c2a440] italic">COMUNIDADE</span>.
+            SIGA-NOS NO <span className="text-gold italic">INSTAGRAM</span>.
           </h3>
           
           <p className="text-white/40 max-w-3xl mx-auto text-sm md:text-base font-medium leading-relaxed mb-12">
-            Também nos acompanhe nas redes sociais para ficar por dentro de novas atualizações, promoções, eventos e muito mais, tudo para tornar a sua experiência cada vez melhor!
+            Acompanhe nossas redes sociais para ficar por dentro das atualizações, promoções, eventos e muito mais. Junte-se à nossa comunidade!
           </p>
+
+          <a 
+            href="https://instagram.com/siaobarberclub" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-white text-black px-10 py-4 rounded-full font-black uppercase tracking-widest text-[10px] md:text-xs transition-all hover:bg-gold mb-16 shadow-xl"
+          >
+            <Plus size={16} strokeWidth={3} />
+            Seguir no Instagram
+          </a>
         </div>
 
         {/* Custom Grid Layout */}
@@ -62,7 +72,7 @@ const Community: React.FC = () => {
           href="https://instagram.com/siaobarberclub" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-block text-[#c2a440] font-black uppercase tracking-[0.3em] text-[10px] md:text-xs hover:text-white transition-colors"
+          className="inline-block text-white/30 font-black uppercase tracking-[0.3em] text-[10px] hover:text-gold transition-colors"
         >
           VER MAIS NO @SIAOBARBERCLUB
         </a>

@@ -65,7 +65,7 @@ const Gallery: React.FC = () => {
             {images.map((src, index) => (
               <div 
                 key={index} 
-                className="min-w-[300px] md:min-w-[450px] aspect-[4/3] rounded-[32px] overflow-hidden border border-white/5 snap-center transition-all duration-500 hover:border-[#c2a440]/20"
+                className="min-w-[220px] md:min-w-[320px] aspect-[9/16] rounded-[32px] overflow-hidden border border-white/5 snap-center transition-all duration-500 hover:border-[#c2a440]/20"
               >
                 <img 
                   src={src} 

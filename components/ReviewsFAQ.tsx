@@ -22,13 +22,13 @@ const ReviewsFAQ: React.FC = () => {
     { 
       name: 'Lucas Oliveira', 
       role: 'ALUNO ACADEMY', 
-      text: 'Fiz o curso na Sião Academy e saí pronto para o mercado de luxo. A metodologia prática e o suporte dos instrutores são excepcionais. Recomendo demais!', 
+      text: 'Fiz o curso na Academy e saí pronto para o mercado de luxo. A metodologia prática e o suporte dos instrutores são excepcionais. Recomendo demais!', 
       rating: 5 
     },
     { 
       name: 'Marcos Lima', 
       role: 'CLIENTE FIEL', 
-      text: 'Sou cliente há anos e a consistência na qualidade é o que me prende. É mais que um corte, é um momento de cuidado pessoal em um refúgio masculino de elite.', 
+      text: 'Sou cliente há anos e a consistência na qualidade é o que me prende. É mais que um corte, é um momento de cuidado pessoal em um refúgio masculino exclusivo.', 
       rating: 5 
     },
     { 
@@ -57,16 +57,16 @@ const ReviewsFAQ: React.FC = () => {
   return (
     <section id="reviews" className="py-24 bg-[#0b0d11] relative overflow-hidden">
       {/* Background Aurora Effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#c2a440]/5 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Reviews Header */}
         <div className="text-center mb-16">
-          <h2 className="text-[#c2a440] font-black uppercase tracking-[0.4em] text-[10px] mb-4">
+          <h2 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">
             VOZES DA EXPERIÊNCIA
           </h2>
           <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight mb-8">
-            O QUE DIZEM NOSSOS <span className="text-[#c2a440] italic">CLIENTES.</span>
+            O QUE DIZEM NOSSOS <span className="text-gold italic">CLIENTES.</span>
           </h3>
           <p className="text-white/40 max-w-2xl mx-auto text-sm md:text-base font-medium leading-relaxed mb-10">
             Gostou do nosso atendimento? Deixe seu comentário de 5 estrelas, conte um pouco sobre a sua experiência e compartilhe uma foto.
@@ -76,7 +76,7 @@ const ReviewsFAQ: React.FC = () => {
             href="https://google.com/search?q=siao+barber+club+reviews" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#d4b550] hover:bg-[#e6c762] text-black px-8 py-4 rounded-full font-black uppercase tracking-widest text-[10px] transition-all gold-glow"
+            className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-black px-8 py-4 rounded-full font-black uppercase tracking-widest text-[10px] transition-all gold-glow"
           >
             Avaliar no Google
             <ExternalLink size={14} />
@@ -88,14 +88,14 @@ const ReviewsFAQ: React.FC = () => {
           {/* Navigation Arrows */}
           <button 
             onClick={() => scroll('left')}
-            className="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/10 bg-black/60 backdrop-blur-md flex items-center justify-center text-white/50 hover:border-[#c2a440]/50 hover:text-[#c2a440] transition-all"
+            className="absolute -left-4 md:-left-12 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/10 bg-black/60 backdrop-blur-md flex items-center justify-center text-white/50 hover:border-gold/50 hover:text-gold transition-all"
           >
             <ChevronLeft size={20} />
           </button>
           
           <button 
             onClick={() => scroll('right')}
-            className="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/10 bg-black/60 backdrop-blur-md flex items-center justify-center text-white/50 hover:border-[#c2a440]/50 hover:text-[#c2a440] transition-all"
+            className="absolute -right-4 md:-right-12 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full border border-white/10 bg-black/60 backdrop-blur-md flex items-center justify-center text-white/50 hover:border-gold/50 hover:text-gold transition-all"
           >
             <ChevronRight size={20} />
           </button>
@@ -108,11 +108,11 @@ const ReviewsFAQ: React.FC = () => {
             {reviews.map((r, i) => (
               <div 
                 key={i} 
-                className="min-w-[300px] md:min-w-[400px] snap-center p-8 md:p-10 rounded-[32px] bg-white/[0.03] border border-white/5 backdrop-blur-xl flex flex-col transition-all hover:border-[#c2a440]/20 group"
+                className="min-w-[300px] md:min-w-[400px] snap-center p-8 md:p-10 rounded-[32px] bg-white/[0.03] border border-white/5 backdrop-blur-xl flex flex-col transition-all hover:border-gold/20 group"
               >
                 <div className="flex gap-1 mb-6">
                   {[...Array(r.rating)].map((_, i) => (
-                    <Star key={i} size={14} fill="#c2a440" stroke="#c2a440" />
+                    <Star key={i} size={14} fill="#C5A028" stroke="#C5A028" />
                   ))}
                 </div>
                 
@@ -125,7 +125,7 @@ const ReviewsFAQ: React.FC = () => {
 
                 <div className="mt-auto pt-8 border-t border-white/5">
                   <h4 className="text-white font-black text-sm uppercase mb-1 tracking-tight">{r.name}</h4>
-                  <p className="text-[#c2a440] font-black uppercase text-[10px] tracking-widest">{r.role}</p>
+                  <p className="text-gold font-black uppercase text-[10px] tracking-widest">{r.role}</p>
                 </div>
               </div>
             ))}
@@ -135,9 +135,9 @@ const ReviewsFAQ: React.FC = () => {
         {/* FAQ Section */}
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-[#c2a440] font-black uppercase tracking-[0.4em] text-[10px] mb-4">FAQ</h2>
+            <h2 className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-4">FAQ</h2>
             <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4">
-              DÚVIDAS <span className="text-[#c2a440] italic">COMUNS.</span>
+              DÚVIDAS <span className="text-gold italic">COMUNS.</span>
             </h3>
           </div>
 
@@ -146,7 +146,7 @@ const ReviewsFAQ: React.FC = () => {
               <div 
                 key={idx} 
                 className={`border rounded-3xl overflow-hidden transition-all duration-300 ${
-                  openFaq === idx ? 'bg-white/[0.03] border-[#c2a440]/30' : 'bg-black/40 border-white/5'
+                  openFaq === idx ? 'bg-white/[0.03] border-gold/30' : 'bg-black/40 border-white/5'
                 }`}
               >
                 <button 
@@ -154,12 +154,12 @@ const ReviewsFAQ: React.FC = () => {
                   className="w-full flex items-center justify-between p-7 text-left group"
                 >
                   <span className={`font-black uppercase text-xs md:text-sm tracking-widest transition-colors ${
-                    openFaq === idx ? 'text-[#c2a440]' : 'text-white/80 group-hover:text-white'
+                    openFaq === idx ? 'text-gold' : 'text-white/80 group-hover:text-white'
                   }`}>
                     {faq.q}
                   </span>
                   <div className={`p-2 rounded-full transition-all ${
-                    openFaq === idx ? 'bg-[#c2a440] text-black' : 'bg-white/5 text-white/40'
+                    openFaq === idx ? 'bg-gold text-black' : 'bg-white/5 text-white/40'
                   }`}>
                     {openFaq === idx ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                   </div>

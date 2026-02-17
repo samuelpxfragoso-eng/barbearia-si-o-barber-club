@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
     { name: 'Sobre', href: '#sobre' },
     { name: 'Unidades', href: '#unidades' },
     { name: 'Serviços', href: '#servicos' },
+    { name: 'Produtos', href: '#produtos' },
     { name: 'Academy', href: '#academy' },
   ];
 
@@ -28,7 +29,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-xl md:text-2xl font-black tracking-tighter text-white uppercase italic">
-            SIÃO <span className="text-[#c2a440]">BARBER CLUB</span>
+            SIÃO <span className="text-gold">BARBER CLUB</span>
           </span>
         </div>
 
@@ -38,23 +39,23 @@ const Navbar: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-white/70 hover:text-[#c2a440] transition-colors"
+              className="text-sm font-medium text-white/70 hover:text-gold transition-colors"
             >
               {link.name}
             </a>
           ))}
           <div className="flex items-center gap-4">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/siaobarberclub"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full border border-white/20 hover:border-[#c2a440] hover:text-[#c2a440] transition-all"
+              className="p-2 rounded-full border border-white/20 hover:border-gold hover:text-gold transition-all"
             >
               <Instagram size={20} />
             </a>
             <a
-              href="#agendar"
-              className="bg-[#c2a440] hover:bg-[#d4b550] text-black px-6 py-2.5 rounded-full font-bold text-sm tracking-wide transition-all gold-glow"
+              href="#servicos"
+              className="bg-gold hover:bg-gold-light text-black px-6 py-2.5 rounded-full font-bold text-sm tracking-wide transition-all gold-glow"
             >
               Agendar Agora
             </a>
@@ -84,9 +85,9 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <a
-            href="#agendar"
+            href="#servicos"
             onClick={() => setIsMenuOpen(false)}
-            className="w-full text-center bg-[#c2a440] text-black py-4 rounded-full font-bold text-lg"
+            className="w-full text-center bg-gold text-black py-4 rounded-full font-bold text-lg"
           >
             Agendar Agora
           </a>
