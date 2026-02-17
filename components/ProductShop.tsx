@@ -112,13 +112,13 @@ const ProductShop: React.FC = () => {
           </div>
         </div>
 
-        {/* Botão de Alternância */}
+        {/* Botão de Alternância com Animação */}
         <div className="flex flex-col items-center gap-8">
           <button 
             onClick={() => setShowList(!showList)}
-            className="group flex items-center gap-4 bg-gold hover:bg-gold-light text-black px-12 py-6 rounded-2xl font-black uppercase tracking-widest text-sm transition-all gold-glow"
+            className="group flex items-center gap-4 bg-gold hover:bg-gold-light text-black px-12 py-6 rounded-2xl font-black uppercase tracking-widest text-sm transition-all gold-glow animate-[pulse-glow_2.5s_ease-in-out_infinite]"
           >
-            <Package size={22} />
+            <Package size={22} className="group-hover:rotate-12 transition-transform" />
             {showList ? 'Ocultar Catálogo' : 'Ver Catálogo Completo'}
             {showList ? <ChevronUp size={22} /> : <ChevronDown size={22} />}
           </button>
@@ -169,6 +169,19 @@ const ProductShop: React.FC = () => {
           </p>
         </div>
       </div>
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes pulse-glow {
+          0%, 100% { 
+            transform: scale(1);
+            box-shadow: 0 0 15px rgba(197, 160, 40, 0.2);
+          }
+          50% { 
+            transform: scale(1.03);
+            box-shadow: 0 0 35px rgba(197, 160, 40, 0.5);
+          }
+        }
+      `}} />
     </section>
   );
 };
